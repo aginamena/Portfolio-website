@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item:hover{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#main-div{
+  position: relative;
+  margin-top: 30px;
+  position: relative;
+}
+
+#contact-me-div{
+  position: absolute;
+  top:0;
+  right:0;
+}
+#get-in-touch-div{
+  width:50%;
+}
+#message{
+  width:304px;
+  height: 104px;
+}
+#send-message{
+  background: black;
+  color:white;
+  width:168px;
+  height: 38px;
+  border:0;
+}
+#send-message:hover{
+  background: white;
+  border:1px solid black;
+  color: black;
+}
+input, textarea{
+  padding-left:10px;
+}
+
+footer{
+  background: #242124;
+  margin-top:100px;
+  color:white;
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+
+#footer-logo{
+  height: 65px;
+  background: white;
+  border-radius: 50px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.footer-styling{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+.footer-styling:hover{
+  color:white;
+  text-decoration: underline;
+}
+
+@media(max-width:768px){
+  #contact-me-div, footer{
+    position: static;
+    margin-top:50px;
+  }
+  #get-in-touch-div{
+    width:100%;
+  }
+}
+@media(max-width:500px){
+  #footer-flex{
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 15px 0;
+  }
+  #linkedin-icon{
+    margin-left:10px
+  }
+  #home{
+    margin: 10px 0;
+  }
+  #footer-logo{
+    /* centring block element */
+    margin: 0 auto;
+  }
+  #portfolio{
+    margin-bottom: 10px;
+  }
+  input, #message{
+    width:100%;
+  }
+}

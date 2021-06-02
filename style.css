@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+#navigation{
+  margin-top:15px;
+}
+#dev_sign_img{
+  margin-top:30px;
+  position: relative;
+}
+.nav-item:hover{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#dev_sign_img img{
+  display: block;
+  margin:0 auto;
+}
+
+#dev_sign_img p{
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
+  width: 300px;
+  margin-bottom: 0;
+  bottom: 0;
+  background: white;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+#dev_sign_img a{
+  text-decoration: none;
+}
+
+#about-me-btn-styling{
+  font-size: 16px;
+  padding:5px 20px;
+  display: block;
+  margin-top: 30px;
+  color: white;
+  background: black;
+  border: 0;
+  text-decoration: none;
+}
+#about_me_text{
+  margin-left:40px;
+}
+#about_me_text p{
+  width:300px;
+}
+#about-me-btn-styling:hover{
+  background: white;
+  border:1px solid black;
+  color:black;
+}
+#about_me{
+  display: flex;
+  margin-top:100px;
+}
+
+#about_me div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+#about_me div p{
+  /* padding: 0 100px; */
+}
+#portfolio-btn-styling{
+  padding: 5px 15px;
+  background: white;
+}
+#portfolio-btn-styling:hover, #contact-me-btn-styling:hover{
+  background: black;
+  color:white;
+  border:0;
+}
+#about_me img{
+  width:50%;
+}
+#collab_with_me{
+  display: flex;
+  justify-content: space-between;
+  margin-top:100px;
+}
+
+#contact-me-btn-styling{
+  width:168px;
+  height: 38px;
+  background: white;
+}
+#collab_with_me h2{
+  width:300px
+}
+
+footer{
+  background: #242124;
+  margin-top:100px;
+  color:white;
+}
+
+#footer-logo{
+  height: 65px;
+  background: white;
+  border-radius: 50px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.footer-styling{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+.footer-styling:hover{
+  color:white;
+  text-decoration: underline;
+}
+
+@media(max-width:968px){
+  #dev_sign_img img{
+    width:100%;
+  }
+}
+@media(max-width:768px){
+  footer, #dev_sign_img p{
+    position: static;
+  }
+  #about_me img{
+    width:100%;
+  }
+  #about_me{
+    display: block;
+  }
+  #about_me div{
+    margin-top:40px;
+  }
+  #about_me_text{
+    margin-left:0;
+  }
+  /* #dev_sign_img img{
+    width:100%;
+  } */
+
+}
+@media(max-width:500px){
+  #footer-flex{
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 15px 0;
+  }
+  #linkedin-icon{
+    margin-left:10px
+  }
+  #contact{
+    margin: 10px 0;
+  }
+  #footer-logo{
+    /* centring block element */
+    margin: 0 auto;
+  }
+  #portfolio{
+    margin-bottom: 10px;
+  }
+}
+@media(max-width:528px){
+  #collab_with_me{
+    display: block;
+    text-align: center;
+  }
+  #contact-me-btn-styling{
+    margin-top:20px;
+  }
+  #collab_with_me h2{
+    width:100%;
+  }
+}

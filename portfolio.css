@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+}
+
+.width-styling{
+  width:100%;
+}
+
+body{
+  position: relative;
+}
+#list_of_projects{
+  /* display: flex;
+  flex-wrap: wrap; */
+  position: relative;
+  height: 3950px;
+  margin-top:50px;
+}
+
+.technologies{
+  display: inline-block;
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.projects_container{
+  width:100%;
+  cursor: pointer;
+}
+.projects_container:hover{
+  border:1px solid black;
+}
+.project_description{
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.project_links{
+  display: inline-block;
+  font-weight: bold;
+}
+#right_projects, #left_projects{
+  width:49%;
+}
+
+#right_projects{
+  position: absolute;
+  top:0;
+  right:0;
+}
+#project3, #project4{
+  margin: 30px 0;
+}
+
+
+.html{
+  color: rgb(106, 190, 205);
+}
+.css{
+  color: rgb(62, 84, 163);
+  margin:0 10px;
+}
+.js{
+  color: rgb(225, 55, 132);
+}
+.api{
+  color: rgb(133, 194, 10);
+  margin-left:10px;
+}
+footer{
+  background: #242124;
+  margin-top:100px;
+  color:white;
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+
+
+#footer-logo{
+  height: 65px;
+  background: white;
+  border-radius: 50px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.footer-styling{
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+.footer-styling:hover{
+  color:white;
+  text-decoration: underline;
+}
+
+@media(max-width:768px){
+  footer{
+    position: static;
+  }
+
+  #right_projects{
+    position: static;
+  }
+  #right_projects, #left_projects{
+    width:100%;
+  }
+  #project2{
+    margin-top:30px
+  }
+}
+
+
+@media(max-width:500px){
+  #footer-flex{
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 15px 0;
+  }
+  #linkedin-icon{
+    margin-left:10px
+  }
+  #home{
+    margin: 10px 0;
+  }
+  #footer-logo{
+    /* centring block element */
+    margin: 0 auto;
+  }
+  #contact{
+    margin-bottom: 10px;
+  }
+}
