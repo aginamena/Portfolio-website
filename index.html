@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- bootstrap links -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  <link href = "style.css" rel = "stylesheet">
+    <link href="style.css" rel="stylesheet" />
 
-  <!-- fontawesome link -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
-  <title>Home page</title>
-</head>
-<body>
+    <title>Home page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light container" id="navigation">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <img src="logo.svg" class="navbar-brand" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="portfolio.html">PORTFOLIO</a>
+          <a class="nav-item nav-link" href="contact.html">CONTACT ME</a>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-sm navbar-light container" id = "navigation">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <img src = "logo.svg" class = "navbar-brand">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="portfolio.html" target = "_blank">PORTFOLIO</a>
-        <a class="nav-item nav-link" href="contact.html" target = "_blank">CONTACT ME</a>
+    <div class="container" id="dev_sign_img">
+      <img src="myImages/dev_sign.webp" />
+      <p>
+        Hey, I’m Mena Agina and I love building front-end web applications
+        <a href="#about_me_text"
+          ><button id="about-me-btn-styling">ABOUT ME</button></a
+        >
+      </p>
+    </div>
+
+    <div id="about_me" class="container">
+      <img src="myImages/my_profile.jpg" />
+      <div id="about_me_text">
+        <h3>About Me</h3>
+        <p>
+          I’m a junior front-end web developer looking for a new role in an
+          exciting company. I focus on writing accessible HTML, using modern CSS
+          practices and writing clean JavaScript. I’m based in Canada, Ottawa,
+          but I’m happy working remotely and have experience in remote teams.
+          When I’m not coding, you’ll find me outdoors. I love being out in
+          nature whether that’s going for a walk, run or cycling. I’d love you
+          to check out my work.
+        </p>
+        <a href="portfolio.html"
+          ><button id="portfolio-btn-styling">GO TO PORTFOLIO</button></a
+        >
       </div>
     </div>
-  </nav>
 
-  <div class = "container" id = "dev_sign_img">
-    <img src= "myImages/dev_sign.webp">
-    <p>
-      Hey, I’m Mena Agina and I love building front-end web applications
-      <a href = "#about_me_text"><button id = "about-me-btn-styling"> ABOUT ME </button></a>
-    </p>
-  </div>
-
-  <div id = "about_me" class = "container">
-    <img src = "myImages/my_profile.jpg">
-    <div id = "about_me_text">
-      <h3>About Me </h3>
-      <p>I’m a junior front-end web developer looking for a new role in an exciting company.
-      I focus on writing accessible HTML, using modern CSS practices and writing clean
-      JavaScript. I’m based in Canada, Ottawa, but I’m happy working remotely
-      and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
-      I love being out in nature whether that’s going for a walk, run or cycling. I’d love
-      you to check out my work.</p>
-      <a href = "portfolio.html" target = "_blank"><button id = "portfolio-btn-styling">GO TO PORTFOLIO</button></a>
+    <div id="collab_with_me" class="container">
+      <h2>Interested in doing a project together?</h2>
+      <a href="contact.html"
+        ><button id="contact-me-btn-styling">CONTACT ME</button></a
+      >
     </div>
-  </div>
 
-  <div id = "collab_with_me" class = "container">
-    <h2>Interested in doing a project together?</h2>
-    <a href = "contact.html" target = "_blank"><button id = "contact-me-btn-styling">CONTACT ME </button></a>
-  </div>
-
-  <footer>
-    <div class = "container" id = "footer-flex">
-      <div id = "footer-logo">
-        <img src = "logo.svg">
+    <footer>
+      <div class="container" id="footer-flex">
+        <div id="footer-logo">
+          <img src="logo.svg" />
+        </div>
+        <a class="footer-styling" href="contact.html"
+          ><div id="contact">CONTACT ME</div></a
+        >
+        <a class="footer-styling" href="portfolio.html"
+          ><div id="portfolio">PORTFOLIO</div></a
+        >
+        <a href="https://github.com/aginamena"
+          ><i class="fab fa-github fa-2x footer-styling"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/mena-agina-49b210172/"
+          ><i
+            class="fab fa-linkedin fa-2x footer-styling"
+            id="linkedin-icon"
+          ></i
+        ></a>
       </div>
-      <a class = "footer-styling" href = "contact.html" target = "_blank"><div id = "contact">CONTACT ME</div></a>
-      <a class = "footer-styling" href = "portfolio.html" target = "_blank"><div id= "portfolio">PORTFOLIO</div></a>
-      <a href = "https://github.com/aginamena" target = "_blank"><i class="fab fa-github fa-2x footer-styling"></i></a>
-      <a href = "https://www.linkedin.com/in/mena-agina-49b210172/" target = "_blank"><i class="fab fa-linkedin fa-2x footer-styling" id= "linkedin-icon"></i></a>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
