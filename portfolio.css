@@ -80,6 +80,8 @@ body {
   color: blue;
 }
 .redux {
+  color: #ff8964;
+  margin: 0 10px;
 }
 .firebase {
   color: #f6820d;
