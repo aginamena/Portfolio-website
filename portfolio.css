@@ -79,6 +79,11 @@ body {
 .react {
   color: blue;
 }
+.redux {
+}
+.firebase {
+  color: #f6820d;
+}
 footer {
   background: #242124;
   color: white;
