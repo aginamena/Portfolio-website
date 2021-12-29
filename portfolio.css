@@ -86,6 +86,18 @@ body {
 .firebase {
   color: #f6820d;
 }
+.mongodB {
+  color: #215732;
+  margin-left: 10px;
+}
+.node {
+  color: #6cc24a;
+  margin-left: 10px;
+}
+.express {
+  color: #44883e;
+  margin: 0 10px;
+}
 footer {
   background: #242124;
   color: white;
